@@ -20,6 +20,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    var quePais = ColeccionDePaises()
+    var queBurger = ColeccionDeHamburguesa()
+    
+    @IBOutlet weak var Pais: UILabel!
+    
+    @IBOutlet weak var Hamburgesa: UILabel!
+    
+    @IBAction func pideAhora(sender: UIButton) {
+        Pais.text = quePais.obtenPais()
+        Hamburgesa.text = queBurger.obtenHamburguesa()
+    }
 
+
+    
 }
 
